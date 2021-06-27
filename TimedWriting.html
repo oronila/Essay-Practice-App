@@ -3,7 +3,7 @@
 
 <!-- modify this form HTML and place wherever you want your form -->
   <head>
-    <title>Timed Writing App</title>
+    <title>Timed Writing</title>
     <link href="main.css" rel="stylesheet" type="text/css" >
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"> 
     <script src = "timedWritingTimer.js"></script>
@@ -27,7 +27,7 @@
           <!-- your other form fields go here -->  
             
           <label>Write here:</label>
-          <textarea placeholder="Type here" name = "essay" id="essay" spellcheck="false" style = "resize: none; height: 450px; font-size: 20px;" onclick = timer() onkeydown = checkNewWords(event)></textarea>
+          <textarea placeholder="Type here" name = "essay" id="essay" spellcheck="false" style = "resize: none; height: 450px; font-size: 20px;"  onclick = timer() onkeydown = checkNewWords(event)></textarea>
 
           <button class = "submitbutton" type="submit" onclick = download()>Save</button>
           
