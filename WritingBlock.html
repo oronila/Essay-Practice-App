@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<!-- modify this form HTML and place wherever you want your form -->
+  <head>
+    <title>Writers Block App</title>
+    <link href="main.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"> 
+    <script src = "writersblock.js"></script>
+    <script src = "prompts.js"></script>
+    <script src = "writersBlockTimer.js"></script>
+    <script src = "download.js"></script>
+  </head>
+
+  <body onload= display() >
+
+    <div class = "mycontainer">
+     
+      <div class = "formcontainer">
+        <div class = "prompt">
+          <div class = "promptline" ><span id = "theprompt"><b></b></span></div>
+        </div><hr>
+        
+        <form name="form1">
+                
+          <!-- your other form fields go here -->  
+          <label>Write here:</label>
+          <textarea placeholder="Type here" name = "essay" id="essay" spellcheck="false" style = "resize: none; height: 450px; font-size: 20px;" onclick = timer() onkeydown = preventBackspace(event);checkNewWords(event)></textarea>
+
+
+          <button class = "submitbutton" id="submitButton" type="submit" disabled= "disabled" onclick = download()>Save</button>  
+        </form>
+        
+        <div class = "timer">
+          <div class = "timerbutton" ><span id = "countdown">Start Typing to Start Timer</span></div>
+        </div>
+
+        <div>
+          <div class="output row">
+            <span id="wordCount">Words: 0</span>
+        </div>
+        <a class = "backtohome" href = "index.html"><button>Back to Home</button></a>
+       
+
+      </div>
+    </div>
+  </body>
+</html>
