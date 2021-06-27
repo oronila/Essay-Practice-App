@@ -4,6 +4,13 @@ var timerChangeBool = true;
 function valueChange(){
     document.getElementById('countdown').innerHTML = 5 + ":" + 00;
 }
+var runonce = true;
+function starttimer() {
+    if(runonce==true){
+      timer();
+      runonce = false;
+    }    
+}
 function timer() {
   if(timerChangeBool == true){
       valueChange();

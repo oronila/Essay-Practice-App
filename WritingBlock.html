@@ -25,21 +25,21 @@
                 
           <!-- your other form fields go here -->  
           <label>Write here:</label>
-          <textarea placeholder="Type here" name = "essay" id="essay" spellcheck="false" style = "resize: none; height: 450px; font-size: 20px;" onclick = timer() onkeydown = preventBackspace(event);checkNewWords(event)></textarea>
+          <textarea placeholder="Type here" name = "essay" id="essay" spellcheck="false" style = "resize: none; height: 450px; font-size: 20px;" onkeydown = preventBackspace(event);checkNewWords(event);starttimer()></textarea>
 
 
           <button class = "submitbutton" id="submitButton" type="submit" disabled= "disabled" onclick = download()>Save</button>  
         </form>
         
         <div class = "timer">
-          <div class = "timerbutton" ><span id = "countdown">Start Typing to Start Timer</span></div>
+          <div class = "timerbutton" ><span id = "countdown">Type to Start Timer</span></div>
         </div>
 
         <div>
           <div class="output row">
             <span id="wordCount">Words: 0</span>
         </div>
-        <a class = "backtohome" href = "index.html"><button>Back to Home</button></a>
+        <a class = "backtohome" href = "index.html"><button id = "backtohome">Back to Home</button></a>
        
 
       </div>

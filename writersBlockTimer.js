@@ -3,6 +3,14 @@ var timerChangeBool = true;
 function valueChange(){
     document.getElementById('countdown').innerHTML = 00 + ":" + 15;
 }
+
+var runonce = true;
+function starttimer() {
+    if(runonce==true){
+      timer();
+      runonce = false;
+    }    
+}
 function timer() {
   if(timerChangeBool == true){
       valueChange();

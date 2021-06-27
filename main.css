@@ -58,15 +58,31 @@ textarea {
 }
 
 @media(max-width: 1068px){
+	.countdown{
+		font-size: 24px;
+	}
+
+	.optionsbutton{
+		font-size: 24px;
+	}
 	.promptline{
 		font-size: 30px;
 	}
 	.mycontainer{
 		width: 95%;
 		margin: auto;
-		font-size:30px;
+		font-size:24px;
 	}
 	.button{
 		font-size: 24px;
 	}
+	.submitbutton{
+		height: 50px;
+		font-size: 24px;
+	}
+	#backtohome{
+		height: 50px;
+		font-size: 24px;
+	}
+
 }

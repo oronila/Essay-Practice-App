@@ -27,14 +27,14 @@
           <!-- your other form fields go here -->  
             
           <label>Write here:</label>
-          <textarea placeholder="Type here" name = "essay" id="essay" spellcheck="false" style = "resize: none; height: 450px; font-size: 20px;"  onclick = timer() onkeydown = checkNewWords(event)></textarea>
+          <textarea placeholder="Type here" name = "essay" id="essay" spellcheck="false" style = "resize: none; height: 450px; font-size: 20px;" onkeydown = checkNewWords(event);starttimer()></textarea>
 
           <button class = "submitbutton" type="submit" onclick = download()>Save</button>
           
         </form>
 
         <div class = "timer">
-          <div class = "timerbutton" ><span id = "countdown">Start Typing to Start Timer</span></div>
+          <div class = "timerbutton" ><span id = "countdown">Type to Start Timer</span></div>
         </div>
 
       </div>
@@ -42,7 +42,7 @@
         <div class="output row">
           <span id="wordCount">Words: 0</span>
       </div>
-      <div><a class = "backtohome" href = "index.html"><button>Back to Home</button></a><div>
+      <div><a class = "backtohome" href = "index.html"><button id = "backtohome">Back to Home</button></a><div>
      
 
     </div>
