@@ -83,12 +83,7 @@ body:after {
 
 	padding: 5px;
 }
-@media(max-width: 1068px){
-	.or{
-		display: block;
-		text-align: center;
-	}
-}
+
 .mycontainer {
 	background-color: rgba(255, 255, 255, 0.404);
 	/* position: absolute;
@@ -104,6 +99,17 @@ body:after {
 	padding-bottom: 20px;
 	padding-top: 20px;
 
+}
+@media(max-width: 1068px){
+
+	.or{
+		display: block;
+		text-align: center;
+	}
+  .mycontainer{
+    font-size: 1.5rem;
+    width: 95%;
+  }
 }
 
 .mylist {

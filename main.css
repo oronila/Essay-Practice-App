@@ -21,7 +21,7 @@ body{
 	background-image: none;
 	background-color: white;
 	width: 85%;
-	margin: 5% auto;
+	margin: auto;
 	border-radius: 10px;
 	padding: 10px;
 	padding-bottom: 50px;
@@ -55,4 +55,18 @@ textarea {
 }
 .title{
 	text-align: center;
+}
+
+@media(max-width: 1068px){
+	.promptline{
+		font-size: 30px;
+	}
+	.mycontainer{
+		width: 95%;
+		margin: auto;
+		font-size:30px;
+	}
+	.button{
+		font-size: 24px;
+	}
 }
